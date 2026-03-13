@@ -40,5 +40,41 @@ Key Components
   
   Key (Shift)||  Number of positions each letter is shifted   || 3
 
+Python Implementation
+
+def encrypt_caesar(text, shift):
+    result = ""
+    for char in text:
+        if char.isalpha():
+KHOOR
+3
+            shift_base = ord('A') if char.isupper() else ord('a')
+            result += chr((ord(char) - shift_base + shift) % 26 + shift_base)
+        else:
+            result += char
+    return result
+def decrypt_caesar(cipher_text, shift):
+    return encrypt_caesar(cipher_text, -shift)
+message = "Hello World"
+shift = 3
+encrypted = encrypt_caesar(message, shift)
+print("Encrypted:", encrypted)
+decrypted = decrypt_caesar(encrypted, shift)
+print("Decrypted:", decrypted)
+
+Applications
+• Learning cryptography fundamentals
+• Educational demonstrations
+• Understanding substitution ciphers
+• Introductory cybersecurity exercises
+
+Limitations
+• Easy to break using brute force attack
+• Only 25 possible keys
+• Not secure for modern cryptography
+Conclusion
+
+The Caesar Cipher introduces the concept of encryption, decryption, and key based security. Although
+simple, it provides a foundation for understanding more advanced cryptographic algorithms
 
 Output: <img width="1008" height="226" alt="Image" src="https://github.com/user-attachments/assets/808ac951-aa9d-4819-b6a8-11613f93299d" />
