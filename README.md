@@ -43,23 +43,37 @@ Key Components
 Python Implementation
 
 def encrypt_caesar(text, shift):
+
     result = ""
+    
     for char in text:
+    
         if char.isalpha():
-KHOOR
-3
+        
             shift_base = ord('A') if char.isupper() else ord('a')
+            
             result += chr((ord(char) - shift_base + shift) % 26 + shift_base)
+            
         else:
+        
             result += char
+            
     return result
+    
 def decrypt_caesar(cipher_text, shift):
+
     return encrypt_caesar(cipher_text, -shift)
+    
 message = "Hello World"
+
 shift = 3
+
 encrypted = encrypt_caesar(message, shift)
+
 print("Encrypted:", encrypted)
+
 decrypted = decrypt_caesar(encrypted, shift)
+
 print("Decrypted:", decrypted)
 
 Applications
