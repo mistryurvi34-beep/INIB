@@ -33,8 +33,11 @@ How the Caesar Cipher Works
 Key Components
 
   Component  ||  Description                                  ||   Example
+  
   Plaintext  ||  Original readable message before encryption  || HELLO
+  
   Ciphertext ||  Encrypted message after applying the cipher  || KHOOR
+  
   Key (Shift)||  Number of positions each letter is shifted   || 3
 
 
