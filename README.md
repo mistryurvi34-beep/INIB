@@ -23,14 +23,14 @@ This project implements the Caesar Cipher, one of the simplest and most well-kno
 To develop a Python program that:
 
 - Encrypts a message using a shift value
-- 
+  
 - Decrypts the encrypted message back to the original text
 
 
 🛠️ Technologies Used
 
 - Python 3
-- 
+  
 - No external libraries required
 
 ⚙️ How It Works
